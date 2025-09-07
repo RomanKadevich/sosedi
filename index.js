@@ -17,3 +17,6 @@ burger.addEventListener('click', () => {
     profileButton.classList.toggle('active');
     heroInner.classList.toggle('active');
 });
+
+
+
