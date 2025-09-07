@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__content">
+        <div></div>
+        <button class="header__button-profile">
+            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.62017 8.15253C9.54517 8.14503 9.45517 8.14503 9.37267 8.15253C7.58767 8.09253 6.17017 6.63003 6.17017 4.83003C6.17017 2.99253 7.65517 1.50003 9.50017 1.50003C11.3377 1.50003 12.8302 2.99253 12.8302 4.83003C12.8227 6.63003 11.4052 8.09253 9.62017 8.15253Z"
+                      stroke="#D0AA6F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.87004 10.92C4.05504 12.135 4.05504 14.115 5.87004 15.3225C7.93254 16.7025 11.315 16.7025 13.3775 15.3225C15.1925 14.1075 15.1925 12.1275 13.3775 10.92C11.3225 9.54747 7.94004 9.54747 5.87004 10.92Z"
+                      stroke="#D0AA6F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Личный кабинет</span>
+        </button>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item">Главная</li>
+                <li class="header__list-item">призы</li>
+                <li class="header__list-item">правила</li>
+                <li class="header__list-item">розыгрыш призов</li>
+                <li class="header__list-item">вопрос-ответ</li>
+            </ul>
+        </nav>
+        <button class="burger">
+            <span class="burger-line"></span>
+        </button>
+    </div>
+</header>
+<section class="hero">
+    <div class="hero__content container">
+        <div class="hero__inner">
+            <img src="./images/logo-jardin.svg" alt="">
+            <img src="./images/logo-sosedi.svg" alt="">
+        </div>
+        <div class="hero__wrapper">
+            <div class="hero__info">
+                <p class="hero__info-subtitle">с 26 сентября по 30 октября 2025 года</p>
+                <p class="hero__info-subtitle--bold">Подарите себе яркую осень с JARDIN</p>
+            </div>
+            <div class="hero__mechanic">
+                <div class="hero__mechanic-numbers">
+                    <button class="hero__mechanic-number">1</button>
+                    <button class="hero__mechanic-number">2</button>
+                </div>
+                <div class="hero__mechanic-inner">
+                    <div class="hero__mechanic-description">
+                        <button class="hero__mechanic-number hero__mechanic-number--hidden">1</button>
+                        <h3 class="hero__mechanic-title">КУПИТЕ</h3>
+                        <p class="hero__mechanic-subtitle">Любую продукцию Jardin <br> на сумму от 10 BYN <br> в сети
+                            “Соседи”
+                            <br> с картой “Купилка”/ “Суперкупилка”</p>
+                    </div>
+                    <div class="hero__mechanic-description">
+                        <button class="hero__mechanic-number hero__mechanic-number--hidden">2</button>
+                        <h3 class="hero__mechanic-title">Участвуйте</h3>
+                        <p class="hero__mechanic-subtitle">В розыгрыше призов</p>
+                        <button class="hero__mechanic-button">
+                            подробнее о правилах
+                            <img src="./images/button-svg.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="hero-image--coffee" src="./images/pachki1.png" alt="">
+        <img class="hero-image--shar" src="./images/shar-big.png" alt="">
+    </div>
+</section>
+<section class="prizes">
+    <div class="prizes__content container">
+        <h2 class="prizes__title title">Призы</h2>
+        <div class="prizes__cards">
+            <div class="prizes__card">
+                <div class="prizes__card-body">
+                    <div class="prizes__card-inner">
+                        <div class="prizes__card-images">
+                            <img class="prizes__card-image" src="./images/sertifecat.png" alt="">
+                            <div class="prizes__card-quantity">
+                                <span>x</span>
+                                <h5>200</h5>
+                            </div>
+                        </div>
+                        <h4 class="prizes__card-name title">сертификат на 10 byn</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="prizes__card">
+                <div class="prizes__card-body">
+                    <div class="prizes__card-inner">
+                        <div class="prizes__card-images">
+                            <img class="prizes__card-image" src="./images/kofevarka.png" alt="">
+                            <div class="prizes__card-quantity">
+                                <span>x</span>
+                                <h5>2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="prizes__card-name title">Кофеварка DeLonghi</h4>
+                </div>
+            </div>
+        </div>
+        <div class="main-prize">
+            <div class="main-prize__content container">
+                <h2 class="main-prize__title title">Розыгрыш главного приза</h2>
+                <div class="prizes__cards">
+                    <div class="prizes__card prizes__card--big">
+                        <img style="z-index: 2" class="main-prize__card--shar" src="./images/shar-big.png" alt="">
+                        <img style="z-index: 2" class="main-prize__card--shar-2" src="./images/shar2.png" alt="">
+                        <img style="z-index: 2" class="main-prize__card--shar-3" src="./images/shar3.png" alt="">
+                        <img style="z-index: 2" class="main-prize__card--shar-4" src="./images/shar3.png" alt="">
+                        <div class="prizes__card-body main-prize__card-body">
+                            <img class="main-prize__card-image" style="z-index: 3" src="./images/main-prize.png" alt="">
+                            <img src="./images/fon3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line"></div>
+<section class="rules">
+    <div class="rules__content container">
+        <h2 class="rules__title prizes__title title">Правила</h2>
+        <div class="rules__inner">
+            <div class="prizes__card">
+                <div style="width: auto; height: auto" class="rules__inner-body prizes__card-body">
+                    <div class="rules__wrapper">
+                        <div class="rules__inner-info">
+                            <div class="rules__inner-block">
+                                <button class="hero__mechanic-number rules__inner-number">1</button>
+                                <p class="rules__inner-subtitle">С 29.09.2025 г. по 26.10.2025 г. совершите покупку в
+                                    любом
+                                    магазине «Соседи» или «Соседи экспресс» Игровых товаров, применив при расчете карту
+                                    «Купилка» или «Суперкупилка».</p>
+                            </div>
+                            <div class="rules__inner-block">
+                                <button class="hero__mechanic-number rules__inner-number">2</button>
+                                <p class="rules__inner-subtitle">Заполните персональные данные на Интернет-сайте или в
+                                    Мобильном приложении и подтвердите согласие на участие в Рекламной игре. </p>
+                            </div>
+                            <div class="rules__inner-block">
+                                <button class="hero__mechanic-number rules__inner-number">3</button>
+                                <p class="rules__inner-subtitle">Порядковый номер участника в списке для розыгрыша
+                                    соответствует шестизначному номеру из Игрового кода (за исключением пятизначного
+                                    префикса, однозначного номера, обозначающего номер розыгрыша, и проверочного номера)
+                                    в личном кабинете участника.</p>
+                            </div>
+                        </div>
+                        <div class="rules__inner-link">
+                            <p class="rules__inner-code">10 byn = 1 игровой код</p>
+                            <button style="margin-top: 0" class="hero__mechanic-button rules__button">
+                                подробнее о правилах
+                                <img src="./images/button-svg.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <img class="rules__inner-coffee" src="./images/pachki1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="decorate__shar" src="./images/shar2.png" alt="">
+</section>
+<section class="draw">
+    <div class="draw__content container">
+        <h2 class="draw__title prizes__title title">розыгрыши призов</h2>
+        <div class="draw__cards">
+            <div class="prizes__card">
+                <div class="prizes__card-body draw__card-body">
+                    <h3 class="draw__card-name">даты розыгрыша призов</h3>
+                    <h4 class="draw__card-date">17.10.2025<br/>31.10.2025</h4>
+                    <div class="draw__card-images">
+                        <img class="draw__card-image--coffee" src="./images/kofevarka.png" alt="">
+                        <img class="draw__card-image--sertifecat" src="./images/sertifecat.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="prizes__card">
+                <div class="prizes__card-body draw__card-body">
+                    <h3 class="draw__card-name">дата розыгрыша главного приза</h3>
+                    <h4 class="draw__card-date">04.11.2025 </h4>
+                    <img class="draw__card-image--main-prize" src="./images/main-prize.png" alt="">
+                    <img class="draw__card-image--shar" src="./images/shar-big.png" alt="">
+                    <img class="draw__card-image--shar-2" src="./images/shar3.png" alt="">
+                </div>
+            </div>
+            <div class="prizes__card">
+                <div class="prizes__card-body draw__card-body">
+                    <h3 style="max-width: 244px" class="draw__card-name">результаты<br> розыгрышей призов</h3>
+                    <div class="draw__card-dates">
+                        <button class="draw__card-date--button">17.10.2025</button>
+                        <button class="draw__card-date--button">31.10.2025</button>
+                        <button class="draw__card-date--button">04.11.2025</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <div class="faq__content container">
+        <h2 class="faq__title prizes__title title">вопросы и ответы</h2>
+        <div class="prizes__card faq__card">
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="when">
+                    <div class="faq__card-title">когда проходит Рекламная игра?</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="when">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="which">
+                    <div class="faq__card-title">какой период проведения рекламной игры?</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="which">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="how">
+                    <div class="faq__card-title">как стать участником рекламной игры?</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="how">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="what">
+                    <div class="faq__card-title">что делать, если игровые коды не начислены в личном кабинете?</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="what">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="who">
+                    <div class="faq__card-title">кто может принимать участие в рекламной игре?</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="who">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="which-2">
+                    <div class="faq__card-title">какие продукты необходимо приобрести, чтобы участвовать в рекламной
+                        игре?
+                    </div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="which-2">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="maybe">
+                    <div class="faq__card-title">Можно ли получить приз деньгами?</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="maybe">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+            <div style="height: auto" class="prizes__card-body faq__card-body">
+                <label for="prize">
+                    <div class="faq__card-title">Определение победителей и вручение призов</div>
+                    <p class="faq__card-text">
+                        Для участия в акции необходимо в период с 29 сентября 2025 г. по 26 октября 2025 г. совершить
+                        покупку в любом магазине «Соседи» или «Соседи экспресс» любого кофе Jardin и зарегистрировать
+                        чек с покупкой на сайте. Общий срок проведения акции (включая срок выдачи призов): с 29 сентября
+                        2025 г. по 5 января 2026 г.
+                    </p>
+                </label>
+                <input name="acc" type="radio" id="prize">
+                <div class="faq__card-arrow">
+                </div>
+            </div>
+        </div>
+        <div class="faq__feedback">
+            <p class="faq__feedback-title">
+                не нашли ответ на свой вопрос?<br>
+                мы обязательно ответим
+            </p>
+            <a class="faq__feedback-link" href="tel:+375 (44) 557-27-30">
+                <img src="./images/phone.svg" alt="">
+                +375 (44) 557-27-30
+            </a>
+        </div>
+    </div>
+    <!--    <img class="decorate__shar decorate__shar-2" src="./images/shar2.png">-->
+</section>
+<footer class="footer">
+    <div class="footer__line"></div>
+    <div class="footer__content container">
+        <p class="footer__subtitle">
+            Рекламная игра «Подарите себе яркую осень с JARDIN». Срок проведения (с учетом выдачи призов и публикации
+            результатов): с 29 сентября 2025 года по 5 января 2026 года. Свидетельство о государственной регистрации
+            рекламной игры № ______ от _______________ 2025 г., выданное МАРТ Республики Беларусь.
+            Организатор: ЧРУП «Промофреш», УНП 691757897. Свидетельство государственной регистрации №691757897, выданное
+            МАРТ РБ от 20.02.2014 г. 
+        </p>
+        <div class="footer__images">
+            <img src="./images/logo-jardin.svg" alt="">
+            <img src="./images/logo-sosedi.svg" alt="">
+        </div>
+    </div>
+    <div class="footer__background"></div>
+</footer>
+<script src="./index.js"></script>
+</body>
+</html>
