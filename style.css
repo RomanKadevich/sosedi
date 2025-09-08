@@ -96,7 +96,6 @@ input[type='file'] {
     max-width: 100%;
 }
 
-
 @font-face {
     font-family: 'Circe-Bold';
     src: url("./fonts/circe-bold.ttf") format("truetype");
@@ -152,6 +151,7 @@ body.active {
     height: clamp(150px, calc(150px + (280 - 150) * ((100vw - 1024px) / (1920 - 1024))), 280px);
 }
 
+
 .header {
     position: relative;
 }
@@ -160,6 +160,7 @@ body.active {
     width: 100%;
     height: 100vh;
 }
+
 
 .header__menu.active {
     position: absolute;
@@ -497,7 +498,7 @@ body.active {
 
 
 .prizes {
-    margin-top: 320px;
+    margin-top: clamp(160px, calc(160px + (320 - 160) * ((100vw - 768px) / (1920 - 768))), 320px);
     background: #180606;
 }
 
@@ -665,10 +666,7 @@ body.active {
 
 .rules__inner-body {
     flex-direction: row;
-    background-image: url("./images/line2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background-image: none;
     width: clamp(924px, calc(924px + (1130 - 924) * ((100vw - 1024px) / (1920 - 1024))), 1130px);
     height: 100%;
     justify-content: space-between;
