@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Рекламная игра в СОСЕДЯХ с 29.09.2025 г. по 26.10.2025 г. Главный приз - 10 000 BYN сертификат на путешествие!">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Рекламная игра в магазинах СОСЕДИ «Подарите себе яркую оcень с Jardine».</title>
 </head>
 <body>
 <header class="header">
@@ -23,11 +24,11 @@
         </button>
         <nav class="header__menu">
             <ul class="header__list">
-                <li class="header__list-item">Главная</li>
-                <li class="header__list-item">призы</li>
-                <li class="header__list-item">правила</li>
-                <li class="header__list-item">розыгрыш призов</li>
-                <li class="header__list-item">вопрос-ответ</li>
+                <li><a class="header__list-item" href="#hero">Главная</a></li>
+                <li><a class="header__list-item" href="#prizes">призы</a></li>
+                <li><a class="header__list-item" href="#rules">правила</a></li>
+                <li><a class="header__list-item" href="#draw">розыгрыш призов</a></li>
+                <li><a class="header__list-item" href="#faq">вопрос-ответ</a></li>
             </ul>
         </nav>
         <button class="burger">
@@ -35,16 +36,16 @@
         </button>
     </div>
 </header>
-<section class="hero">
+<section id="hero" class="hero">
     <div class="hero__content container">
         <div class="hero__inner">
-            <img src="./images/logo-jardin.svg" alt="">
-            <img src="./images/logo-sosedi.svg" alt="">
+            <a href="#"><img src="./images/logo-jardin.svg" alt="логотип JARDIN"></a>
+            <a href="#"><img src="./images/logo-sosedi.svg" alt="логотип Соседи"></a>
         </div>
         <div class="hero__wrapper">
             <div class="hero__info">
                 <p class="hero__info-subtitle">с 26 сентября по 30 октября 2025 года</p>
-                <p class="hero__info-subtitle--bold">Подарите себе яркую осень с JARDIN</p>
+                <h1 class="hero__info-subtitle--bold">Подарите себе яркую осень с JARDIN</h1>
             </div>
             <div class="hero__mechanic">
                 <div class="hero__mechanic-numbers">
@@ -54,28 +55,28 @@
                 <div class="hero__mechanic-inner">
                     <div class="hero__mechanic-description">
                         <button class="hero__mechanic-number hero__mechanic-number--hidden">1</button>
-                        <h3 class="hero__mechanic-title">КУПИТЕ</h3>
+                        <h2 class="hero__mechanic-title">КУПИТЕ</h2>
                         <p class="hero__mechanic-subtitle">Любую продукцию Jardin <br> на сумму от 10 BYN <br> в сети
                             “Соседи”
                             <br> с картой “Купилка”/ “Суперкупилка”</p>
                     </div>
                     <div class="hero__mechanic-description">
                         <button class="hero__mechanic-number hero__mechanic-number--hidden">2</button>
-                        <h3 class="hero__mechanic-title">Участвуйте</h3>
+                        <h2 class="hero__mechanic-title">Участвуйте</h2>
                         <p class="hero__mechanic-subtitle">В розыгрыше призов</p>
-                        <button class="hero__mechanic-button">
+                        <a href="#" class="hero__mechanic-button">
                             подробнее о правилах
                             <img src="./images/button-svg.svg" alt="">
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <img class="hero-image--coffee" src="./images/pachki1.png" alt="">
-        <img class="hero-image--shar" src="./images/shar-big.png" alt="">
+        <img class="hero-image--coffee" src="./images/pachki1.png" alt="Decorate Iamge">
+        <img class="hero-image--shar" src="./images/shar-big.png" alt="Decorate Iamge">
     </div>
 </section>
-<section class="prizes">
+<section id="prizes" class="prizes">
     <div class="prizes__content container">
         <h2 class="prizes__title title">Призы</h2>
         <div class="prizes__cards">
@@ -83,10 +84,10 @@
                 <div class="prizes__card-body">
                     <div class="prizes__card-inner">
                         <div class="prizes__card-images">
-                            <img class="prizes__card-image" src="./images/sertifecat.png" alt="">
+                            <img class="prizes__card-image" src="./images/sertifecat.png" alt="Sertifecat">
                             <div class="prizes__card-quantity">
                                 <span>x</span>
-                                <h5>200</h5>
+                                <h3>200</h3>
                             </div>
                         </div>
                         <h4 class="prizes__card-name title">сертификат на 10 byn</h4>
@@ -97,10 +98,10 @@
                 <div class="prizes__card-body">
                     <div class="prizes__card-inner">
                         <div class="prizes__card-images">
-                            <img class="prizes__card-image" src="./images/kofevarka.png" alt="">
+                            <img class="prizes__card-image" src="./images/kofevarka.png" alt="кофеварка">
                             <div class="prizes__card-quantity">
                                 <span>x</span>
-                                <h5>2</h5>
+                                <h3>2</h3>
                             </div>
                         </div>
                     </div>
@@ -128,12 +129,12 @@
     </div>
 </section>
 <div class="line"></div>
-<section class="rules">
+<section id="rules" class="rules">
     <div class="rules__content container">
         <h2 class="rules__title prizes__title title">Правила</h2>
         <div class="rules__inner">
             <div class="prizes__card">
-                <div style="width: auto; height: auto" class="rules__inner-body prizes__card-body">
+                <div style="height: auto" class="rules__inner-body prizes__card-body">
                     <div class="rules__wrapper">
                         <div class="rules__inner-info">
                             <div class="rules__inner-block">
@@ -158,43 +159,43 @@
                         </div>
                         <div class="rules__inner-link">
                             <p class="rules__inner-code">10 byn = 1 игровой код</p>
-                            <button style="margin-top: 0" class="hero__mechanic-button rules__button">
+                            <a href="#" style="margin-top: 0" class="hero__mechanic-button rules__button">
                                 подробнее о правилах
                                 <img src="./images/button-svg.svg" alt="">
-                            </button>
+                            </a>
                         </div>
                     </div>
-                    <img class="rules__inner-coffee" src="./images/pachki1.png" alt="">
+                    <img class="rules__inner-coffee" src="./images/pachki1.png" alt="Decorate Image">
                 </div>
             </div>
         </div>
     </div>
     <img class="decorate__shar" src="./images/shar2.png" alt="">
 </section>
-<section class="draw">
+<section id="draw" class="draw">
     <div class="draw__content container">
         <h2 class="draw__title prizes__title title">розыгрыши призов</h2>
         <div class="draw__cards">
-            <div class="prizes__card">
+            <div class="prizes__card draw__card">
                 <div class="prizes__card-body draw__card-body">
                     <h3 class="draw__card-name">даты розыгрыша призов</h3>
                     <h4 class="draw__card-date">17.10.2025<br/>31.10.2025</h4>
                     <div class="draw__card-images">
-                        <img class="draw__card-image--coffee" src="./images/kofevarka.png" alt="">
-                        <img class="draw__card-image--sertifecat" src="./images/sertifecat.png" alt="">
+                        <img class="draw__card-image--coffee" src="./images/kofevarka.png" alt="Кофеварка">
+                        <img class="draw__card-image--sertifecat" src="./images/sertifecat.png" alt="Сертификат">
                     </div>
                 </div>
             </div>
-            <div class="prizes__card">
+            <div class="prizes__card draw__card">
                 <div class="prizes__card-body draw__card-body">
                     <h3 class="draw__card-name">дата розыгрыша главного приза</h3>
                     <h4 class="draw__card-date">04.11.2025 </h4>
-                    <img class="draw__card-image--main-prize" src="./images/main-prize.png" alt="">
-                    <img class="draw__card-image--shar" src="./images/shar-big.png" alt="">
-                    <img class="draw__card-image--shar-2" src="./images/shar3.png" alt="">
+                    <img class="draw__card-image--main-prize" src="./images/main-prize.png" alt="Главный приз">
+                    <img class="draw__card-image--shar" src="./images/shar-big.png" alt="decorate image">
+                    <img class="draw__card-image--shar-2" src="./images/shar3.png" alt="decorate image">
                 </div>
             </div>
-            <div class="prizes__card">
+            <div class="prizes__card draw__card">
                 <div class="prizes__card-body draw__card-body">
                     <h3 style="max-width: 244px" class="draw__card-name">результаты<br> розыгрышей призов</h3>
                     <div class="draw__card-dates">
@@ -207,7 +208,7 @@
         </div>
     </div>
 </section>
-<section class="faq">
+<section id="faq" class="faq">
     <div class="faq__content container">
         <h2 class="faq__title prizes__title title">вопросы и ответы</h2>
         <div class="prizes__card faq__card">
@@ -221,7 +222,7 @@
                         2025 г. по 5 января 2026 г.
                     </p>
                 </label>
-                <input name="acc" type="radio" id="when">
+                <input checked name="acc" type="radio" id="when">
                 <div class="faq__card-arrow">
                 </div>
             </div>
@@ -331,15 +332,16 @@
                 не нашли ответ на свой вопрос?<br>
                 мы обязательно ответим
             </p>
-            <a class="faq__feedback-link" href="tel:+375 (44) 557-27-30">
+            <a class="faq__feedback-link" href="tel:+375(44)557-27-30">
                 <img src="./images/phone.svg" alt="">
                 +375 (44) 557-27-30
             </a>
         </div>
     </div>
-    <!--    <img class="decorate__shar decorate__shar-2" src="./images/shar2.png">-->
+        <img class="decorate__shar decorate__shar-2" alt="Decorate Image" src="./images/shar2.png">
 </section>
-<footer class="footer">
+<footer id="footer" class="footer">
+    <img class="footer__decorate-shar" src="./images/shar3.png" alt="">
     <div class="footer__line"></div>
     <div class="footer__content container">
         <p class="footer__subtitle">
@@ -350,8 +352,8 @@
             МАРТ РБ от 20.02.2014 г. 
         </p>
         <div class="footer__images">
-            <img src="./images/logo-jardin.svg" alt="">
-            <img src="./images/logo-sosedi.svg" alt="">
+            <a href="#"><img src="./images/logo-jardin.svg" alt="логотип JARDIN"></a>
+            <a href="#"><img src="./images/logo-sosedi.svg" alt="логотип Соседи"></a>
         </div>
     </div>
     <div class="footer__background"></div>
