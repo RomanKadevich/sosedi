@@ -755,6 +755,11 @@ body.active {
     height: clamp(360px, calc(360px + (400 - 360) * ((100vw - 375px) / (1024 - 375))), 400px);
 }
 
+.draw__card:last-child .draw__card-body {
+    background-image: url("./images/shadow.png");
+    background-position: center;
+}
+
 .draw__card-name {
     font-weight: 700;
     font-size: 20px;
@@ -898,6 +903,7 @@ body.active {
 }
 
 .faq__card-text {
+    font-family: 'Circe-Regular', sans-serif;
     display: none;
     margin-top: 20px;
     font-weight: 400;
@@ -962,7 +968,8 @@ input[type="radio"] {
 
 .decorate__shar-2 {
     position: absolute;
-    right: -133px;
+    transform: translateX(133px);
+    right: 0;
     top: 0;
     left: auto;
     z-index: 2;
@@ -1047,6 +1054,12 @@ input[type="radio"] {
     }
 }
 
+@media screen and (min-width: 1580px) {
+    .footer__images {
+        margin-bottom: -268px;
+    }
+}
+
 
 @media screen and (max-width: 1600px) {
     .hero__info-subtitle {
@@ -1081,6 +1094,10 @@ input[type="radio"] {
     .footer__decorate-shar {
         top: auto;
         bottom: clamp(147px, calc(147px + (261 - 147) * ((100vw - 375px) / (1200 - 375))), 261px);
+    }
+
+    .footer__line {
+        background-size: contain;
     }
 }
 
@@ -1344,13 +1361,33 @@ input[type="radio"] {
 
 @media screen and (max-width: 761px) {
     .decorate__shar-2 {
-        right: -65px;
+        transform: translateX(65px);
     }
 }
 
 @media screen and (max-width: 701px) {
     .header__content {
         padding: 36px 0px;
+    }
+
+    .line {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prizes__card {
+        width: 100%;
+    }
+
+    .prizes__card-body {
+        width: 100%;
+    }
+
+    .main-prize__card-body {
+        width: clamp(285px, calc(285px + (924 - 285) * ((100vw - 375px) / (1024 - 375))), 924px);
     }
 }
 
@@ -1359,6 +1396,7 @@ input[type="radio"] {
     .decorate__shar {
         bottom: -182px;
     }
+
 
     .rules__wrapper {
         display: flex;
@@ -1409,11 +1447,19 @@ input[type="radio"] {
     .prizes {
         margin-top: 470px;
     }
+
+    .footer__line {
+        background-image: url("./images/footer-line-mobile.png");
+    }
 }
 
 
 @media screen and (max-width: 400px) {
     .hero__inner {
         gap: 20px;
+    }
+
+    #prizes__card-quantity {
+        margin-left: -85px;
     }
 }
