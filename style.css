@@ -241,7 +241,7 @@ body.active {
 
 .hero {
     height: clamp(664px, calc(664px + (1094 - 664) * ((100vw - 1024px) / (1920 - 1024))), 1094px);
-    margin-top: -100px;
+    margin-top: -105px;
     background-image: url("./images/fon1.png");
     background-size: cover;
     background-position: center top;
@@ -452,7 +452,7 @@ body.active {
     display: none;
     position: absolute;
     right: 15px;
-    top: 69px;
+    top: 64px;
     height: 32px;
 }
 
@@ -1099,6 +1099,10 @@ input[type="radio"] {
     .footer__line {
         background-size: contain;
     }
+
+    .hero {
+        background-image: url("./images/fon-1024.png");
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1178,7 +1182,7 @@ input[type="radio"] {
     .hero-image--coffee {
         width: clamp(130px, calc(130px + (221 - 130) * ((100vw - 375px) / (1024 - 375))), 221px);
         height: clamp(190px, calc(190px + (320 - 190) * ((100vw - 375px) / (1024 - 375))), 320px);
-        bottom: -21px;
+        bottom: 17px;
     }
 
     .hero__info-subtitle--bold {
@@ -1345,7 +1349,15 @@ input[type="radio"] {
     }
 }
 
+@media screen and (max-width: 954px) and (min-width: 588px) {
+    .hero__wrapper {
+        height: 664px;
+    }
 
+    .hero-image--coffee {
+        bottom: -29px;
+    }
+}
 
 
 @media screen and (max-width: 846px) {
@@ -1397,7 +1409,6 @@ input[type="radio"] {
         bottom: -182px;
     }
 
-
     .rules__wrapper {
         display: flex;
         flex-direction: column;
@@ -1416,7 +1427,7 @@ input[type="radio"] {
     }
 
     .hero__wrapper {
-        height: 850px;
+        height: 935px;
     }
 
     .hero-image--shar {
@@ -1437,11 +1448,17 @@ input[type="radio"] {
         display: flex;
     }
 
+    .hero {
+        height: 664px;
+    }
+
 
     .hero::after {
         background: url("./images/fon2-new.png");
         background-size: cover;
         height: 414px;
+        background-position: center center;
+        margin-top: -2px;
     }
 
     .prizes {
