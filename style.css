@@ -214,7 +214,8 @@ body.active {
     border: 2px solid #d0aa6f;
     border-radius: 60px;
     padding: 8px 19px;
-
+       z-index: 10;
+transition: all 300ms ease-in-out;
     span {
         margin-bottom: -4px;
         font-weight: 700;
@@ -225,7 +226,9 @@ body.active {
         text-align: center;
     }
 }
-
+.header__button-profile:hover {
+    transform: scale(1.04);
+}
 .header__button-profile.active {
     width: max-content;
     display: flex;
@@ -243,7 +246,7 @@ body.active {
 .hero {
     height: clamp(664px, calc(664px + (1094 - 664) * ((100vw - 1024px) / (1920 - 1024))), 1094px);
     margin-top: -105px;
-    background-image: url("./images/fon1.png");
+    background-image: url("./images/fon1.jpg");
     background-size: cover;
     background-position: center top;
 }
@@ -370,6 +373,7 @@ body.active {
     justify-content: space-between;
     max-width: clamp(332px, calc(332px + (719 - 332) * ((100vw - 1024px) / (1920 - 1024))), 719px);;
     width: 100%;
+    cursor: ;
 }
 
 .hero__mechanic-numbers::after {
@@ -443,11 +447,17 @@ body.active {
     text-transform: uppercase;
     color: #fbd181;
 
+    transition: all 300ms ease-in-out;
     img {
         width: clamp(30px, calc(30px + (40 - 30) * ((100vw - 1024px) / (1920 - 1024))), 40px);
         height: clamp(30px, calc(30px + (40 - 30) * ((100vw - 1024px) / (1920 - 1024))), 40px);
     }
 }
+
+.hero__mechanic-button:hover{
+ transform: scale(1.0404);
+}
+
 
 .burger {
     z-index: 2;
@@ -828,9 +838,20 @@ body.active {
     align-items: center;
     margin-top: 50px;
     gap: 13px;
+    transition: all 400ms ease-in-out;
+}
+
+.draw__card-dates .active:hover{
+    transform: scale(1.0404);
+    cursor: pointer;
 }
 
 .draw__card-date--button {
+    transition: all 300ms ease-in-out;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     width: 200px;
     height: 44px;
@@ -838,7 +859,9 @@ body.active {
     border: 2px solid #fff;
     background: #E0BC83;
     font-size: 20px;
-    color: #fff
+    color: #fff;
+    cursor: not-allowed;
+ 
 }
 
 .decorate__shar {
@@ -982,7 +1005,7 @@ input[type="radio"] {
 }
 
 .footer__background {
-    background-image: url("./images/footer.png"), url("./images/footer-shadow.png");
+    background-image: url("./images/footer.png"), url("./images/footer-shadow.webp");
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     background-position: center bottom, center;
@@ -1103,7 +1126,7 @@ input[type="radio"] {
     }
 
     .hero {
-        background-image: url("./images/fon-1024.png");
+        background-image: url("./images/fon-1024.jpg");
     }
 }
 
