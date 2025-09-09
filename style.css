@@ -373,7 +373,7 @@ transition: all 300ms ease-in-out;
     justify-content: space-between;
     max-width: clamp(332px, calc(332px + (719 - 332) * ((100vw - 1024px) / (1920 - 1024))), 719px);;
     width: 100%;
-    cursor: ;
+    /* cursor: ; */
 }
 
 .hero__mechanic-numbers::after {
@@ -1005,7 +1005,7 @@ input[type="radio"] {
 }
 
 .footer__background {
-    background-image: url("./images/footer.png"), url("./images/footer-shadow.webp");
+    background-image: url("./images/footer.webp"), url("./images/footer-shadow.webp");
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     background-position: center bottom, center;
