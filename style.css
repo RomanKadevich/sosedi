@@ -243,6 +243,10 @@ transition: all 300ms ease-in-out;
     }
 }
 
+
+.active .hero__info{
+  padding-top:50px ;
+}
 .hero {
     height: clamp(664px, calc(664px + (1094 - 664) * ((100vw - 1024px) / (1920 - 1024))), 1094px);
     margin-top: -105px;
