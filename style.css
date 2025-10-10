@@ -1100,10 +1100,10 @@ input[type="radio"] {
         font-size: 14px;
     }
 
-    .header__content {
+    /* .header__content {
         justify-content: flex-start;
         margin-left: 185px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1200px) {
