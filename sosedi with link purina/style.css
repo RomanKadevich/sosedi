@@ -1071,7 +1071,7 @@ input[type="radio"] {
     margin: 30px 0;
 }
 .result_game a{
-   color:white!important;
+   color:white;
    text-decoration: underline;
 }
 
